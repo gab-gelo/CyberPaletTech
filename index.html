@@ -457,29 +457,13 @@
         <!-- # footer 
         ================================================== -->
         <footer class="s-footer">
-            <div class="row s-footer__content">
-                <div class="column xl-9 lg-9 md-9 s-footer__block s-footer__about">
-                    <h3>About CyberPaletTech</h3>
-                    <p>
-                        CyberPaletTech is a dynamic tech-driven company committed to delivering innovative solutions in the digital space. 
-                        We specialize in providing a wide range of services including web development, digital marketing, SEO, and creative 
-                        design. Our mission is to empower businesses with cutting-edge technology and creative strategies that drive growth 
-                        and enhance online presence. At CyberPaletTech, we are dedicated to excellence, ensuring that every project we 
-                        undertake is tailored to meet the unique needs of our clients, while embracing the latest industry trends and best 
-                        practices.
-                    </p>
-                </div>
-                <div class="column xl-3 lg-3 md-3 s-footer__block s-footer__site-links">
-                    <h3>Site Links</h3>
-                    <ul class="link-list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-
-            </div>
+            <div id="footer"></div>
+            <script>
+                fetch('footer.html')
+                    .then(response => response.text())
+                    .then(data => document.getElementById('footer').innerHTML = data);
+            </script>
+            
 
             <div class="row s-footer__bottom">
                 <div class="column xl-6 lg-12">

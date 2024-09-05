@@ -101,15 +101,12 @@
 
         <div class="row pageintro">
             <div class="column xl-6 lg-12">
-                <h2 class="text-display-title">High-impact services to help your business</h2>
+                <h2 class="text-display-title">Tailored Solutions to Elevate Your Business</h2>
             </div>
             <div class="column xl-6 lg-12 u-flexitem-x-right">
                 <p class="lead">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias eos quas blanditiis, quos sint nostrum fugit aperiam 
-                inventore optio itaque molestias corporis, ipsa tenetur eligendi nihil iste porro, natus culpa consequuntur? Maxime, 
-                corporis tempore. Sed tenetur veritatis velit recusandae eum, molestiae voluptate ducimus laudantium esse illo 
-                doloribus atque eligendi deleniti iusto. 
-                </p>
+                    As a dedicated individual, I offer tailored services designed to meet the unique needs of your business. With a combination of creative strategy and technical expertise, I focus on delivering solutions that help address your challenges and position you for long-term success. From marketing strategies to digital solutions, I am committed to helping your business thrive in today’s competitive landscape.
+                    </p>
             </div>                       
         </div>  <!-- pageintro -->       
 
@@ -209,15 +206,15 @@
                         </div>
                         <div class="list-items__item-text">
                             <p>
-                            Proficient in various programming languages and frameworks, delivering efficient and scalable solutions tailored to meet specific needs.
+                            I have a basic understanding of programming languages like Java, C, C#, C++, and PHP. With this knowledge, I can work on simple coding tasks and small projects, and I am always eager to learn more to improve my skills.
                             </p>
-
+                        
                             <ul class="list-services">
-                                <li>Custom Solutions</li>
-                                <li>Application Development</li>
-                                <li>System Integration</li>
+                                <li>Basic Coding Projects</li>
+                                <li>Learning and Experimenting with New Technologies</li>
+                                <li>Problem Solving through Code</li>
                             </ul>
-                        </div>
+                        </div>                        
                     </div> <!-- end list-items__item -->
 
                     <div class="grid-list-items__item list-items__item">
@@ -236,6 +233,22 @@
                             </ul>
                         </div>
                     </div> <!-- end list-items__item -->
+                    <div class="grid-list-items__item list-items__item">
+                        <div class="list-items__item-header">
+                            <h3 class="list-items__item-title">UI/UX Design</h3>
+                        </div>
+                        <div class="list-items__item-text">
+                            <p>
+                            I have hands-on experience with UI/UX design, using Figma as my main tool for creating intuitive and user-friendly designs. I focus on crafting clean, functional interfaces that enhance user experience while meeting project goals.
+                            </p>
+                        
+                            <ul class="list-services">
+                                <li>Creating Wireframes and Mockups</li>
+                                <li>Designing User-Friendly Interfaces</li>
+                                <li>Prototyping and Usability Testing</li>
+                            </ul>
+                        </div>                        
+                    </div> <!-- end list-items__item -->                    
 
                 </div> <!-- grid-list-items -->
 
@@ -396,29 +409,12 @@
         <!-- # re-inser footer later     
         ================================================== -->
         <footer class="s-footer">
-            <div class="row s-footer__content">
-                <div class="column xl-6 lg-6 md-12 s-footer__block s-footer__about">
-                    <h3>About CyberPaletTech</h3>
-                    <p>
-                        CyberPaletTech is a dynamic tech-driven company committed to delivering innovative solutions in the digital space. 
-                        We specialize in providing a wide range of services including web development, digital marketing, SEO, and creative 
-                        design. Our mission is to empower businesses with cutting-edge technology and creative strategies that drive growth 
-                        and enhance online presence. At CyberPaletTech, we are dedicated to excellence, ensuring that every project we 
-                        undertake is tailored to meet the unique needs of our clients, while embracing the latest industry trends and best 
-                        practices.
-                    </p>
-                </div>
-                <div class="column xl-3 lg-6 md-12 s-footer__block s-footer__site-links">
-                    <h3>Site Links</h3>
-                    <ul class="link-list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-
-            </div>
+            <div id="footer"></div>
+            <script>
+                fetch('footer.html')
+                    .then(response => response.text())
+                    .then(data => document.getElementById('footer').innerHTML = data);
+            </script>
 
             <div class="row s-footer__bottom">
                 <div class="column xl-6 lg-12">
